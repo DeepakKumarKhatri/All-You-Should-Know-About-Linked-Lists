@@ -2,7 +2,6 @@
 using namespace std;
 struct Student{
 	int id;
-	int marks;
 	Student *next = NULL;
 };
 Student *first1 = NULL;
