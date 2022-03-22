@@ -21,16 +21,16 @@ void delete_After_Specific();
 void reverse_By_Iteration();
 void reverse_By_Recursion(Student*);
 void count_Number_Of_Nodes();
-int count_Number_Of_Nodes_Recursion(Student*);
 void sum_Of_All_Marks();
 void Highest_Marks_In_List();
 void Lowest_Marks_In_List();
-bool search_In_LinkedList();
 void insert_In_Sorted_List();
-bool check_If_List_Is_Sorted();
 void remove_Duplicates_In_LinkedList();
 void reverse_Using_Sliding_Pointers();
 void displayTheLinkedList();
+bool search_In_LinkedList();
+bool check_If_List_Is_Sorted();
+int count_Number_Of_Nodes_Recursion(Student*);
 
 int main(){
     display();
@@ -47,8 +47,8 @@ void display(){
 	cout<<"6  - Delete End \n";
 	cout<<"7  - Delete Before Specific \n";
 	cout<<"8  - Delete After Specific \n";
-    cout<<"9  - Reverse By Iteration\n";
-    cout<<"10 - Reverse By Recursion \n";
+    	cout<<"9  - Reverse By Iteration\n";
+        cout<<"10 - Reverse By Recursion \n";
 	cout<<"11 - Count Number Of Nodes \n";
 	cout<<"12 - Count Number Of Nodes Using Recursion \n";
 	cout<<"13 - Sum of All Marks \n";
@@ -60,7 +60,7 @@ void display(){
 	cout<<"19 - Check If ID of List Is Sorted \n";
 	cout<<"20 - Remove Duplicates ID's In Linked List \n";
 	cout<<"21 - Reverse Using Sliding Pointers \n";
-    cout<<"22 - Display the Linked List \n";
+    	cout<<"22 - Display the Linked List \n";
 
     cout<<"Enter Your Option: ";
     int option;
@@ -75,7 +75,7 @@ void display(){
         case 2:
             insert_end();
             break;
-		case 3:
+	case 3:
             insert_Before_Specific();
             break;	
         case 4:
@@ -86,60 +86,60 @@ void display(){
             break;
         case 6:
             delete_end();
-			break;
-		case 7:
+		break;
+	case 7:
             delete_Before_Specific();
-			break;
-		case 8:
+		break;
+	case 8:
             delete_After_Specific();
-			break;
-		case 9:
+		break;
+	case 9:
             reverse_By_Iteration();
-			break;
-		case 10:
+		break;
+	case 10:
             reverse_By_Recursion(first);
-			display();
-			break;
-		case 11:
+		display();
+		break;
+	case 11:
             count_Number_Of_Nodes();
-			break;
-		case 12:
+		break;
+	case 12:
             cout<<count_Number_Of_Nodes_Recursion(first);
-			display();
-			break;
-		case 13:
+		display();
+		break;
+	case 13:
             sum_Of_All_Marks();
-			break;
-		case 14:
+		break;
+	case 14:
             Highest_Marks_In_List();
-			break;
-		case 15:
+		break;
+	case 15:
             Lowest_Marks_In_List();
-			break;
-		case 16:
+		break;
+	case 16:
             cout<<search_In_LinkedList();
-			display();
-			break;
-		case 17:
+		display();
+		break;
+	case 17:
             insert_In_Sorted_List();
-			break;
-		case 18:
+		break;
+	case 18:
             delete_Specific();
-			break;
-		case 19:
+		break;
+	case 19:
             cout<<check_If_List_Is_Sorted();
-			display();
-			break;
-		case 20:
+		display();
+		break;
+	case 20:
             remove_Duplicates_In_LinkedList();
-			display();
-			break;
-		case 21:
+		display();
+		break;
+	case 21:
             reverse_Using_Sliding_Pointers();
-			break;
-		case 22:
+		break;
+	case 22:
             displayTheLinkedList();
-			break;
+		break;
         default:
             cout<<"*** Invalid Option ***\n";
             cout<<"*** Enter Again ***\n";
