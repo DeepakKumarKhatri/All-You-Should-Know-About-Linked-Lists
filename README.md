@@ -3,8 +3,7 @@ This Repository contains all the possible operations which are neccesary for a n
 
 
 # 🔥Linked List In C++
-
-![DSA-Bootcamp-Java](https://socialify.git.ci/DeepakKumarKhatri/All-You-Should-Know-About-Linked-Lists/image?description=1&font=Inter&language=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
+![All-You-Should-Know-About-Linked-Lists](https://socialify.git.ci/DeepakKumarKhatri/All-You-Should-Know-About-Linked-Lists/image?description=1&font=Raleway&forks=1&issues=1&language=1&name=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Light)
 
 ## Connect with me
   <a href="https://twitter.com/DeepakK01847837">
