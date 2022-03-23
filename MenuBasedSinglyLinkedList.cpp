@@ -1,4 +1,4 @@
-//Hello Folks
+//Hey Folks
 //Before copying anything from this program I would reccomend you all is to fork this repo and run it once in your system in order to know how it is working.
 //I have merged all the operations on Singly linked list in a single menu based program.
 //If you want to have a single file of each of these check these in this repo only I have arranged that one too for all of you!
