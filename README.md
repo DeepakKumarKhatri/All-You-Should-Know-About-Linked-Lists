@@ -1,5 +1,5 @@
 # 🏆 All-You-Should-Know-About-Linked-Lists
-This Repository contains all the possible operations which are neccesary for a newbie to practice and to master Linked List
+This Repository contains all the possible operations which are necessary for a newbie to practice and to master Linked List
 
 
 # 🔥Linked List In C++
