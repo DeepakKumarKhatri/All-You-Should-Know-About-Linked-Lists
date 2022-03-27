@@ -17,6 +17,7 @@ struct Ride{
     string riderName;
     Ride *nextRideDetail = NULL;
 };
+
 struct Car{
     string driverName;
     string carName;
@@ -29,10 +30,10 @@ struct Car{
 Car *first = NULL;
 Car *last = NULL;
 
-
 int main(){
     mainMenu();
 };
+
 void mainMenu(){
     cout<<"\n You can Peform These Tasks \n";
     cout<<"1 - Register New Car \n";
@@ -90,7 +91,6 @@ void register_New_Car()
     cout<<"Enter Car Type (1/2): ";
     cin>>current->carType;
 
-
     if (first == NULL){
         first = last = current;
     }
@@ -101,7 +101,6 @@ void register_New_Car()
     mainMenu();
 }
 void display_Detail_Registered_Cars(){
-
     cout<<"This Is the function of Display Detail Registered Cars \n";
 
     Car *p = first;
@@ -111,51 +110,50 @@ void display_Detail_Registered_Cars(){
         int count = 1;
         while(p!=NULL)
         {
-			cout<<endl;
-			cout<<"Car: "<<count<<endl;
+	    cout<<endl;
+	    cout<<"Car: "<<count<<endl;
             cout<<"Driver "<<"Name: "<<p->driverName<<endl;
             cout<<"Car "<<"Name: "<<p->carName<<endl;
             cout<<"Registration "<<"Number: "<<p->regNumber<<endl;
             cout<<"Car "<<"Type: "<<p->carType<<endl;
-			cout<<endl;
-			count++;
+	    cout<<endl;
+	    count++;
             p = p->next;
         }
     }
     mainMenu();
 }
+
 void display_Type2_Cars(){
 	cout<<"This Is the function of Display Type 2 Cars \n";
 
-    Car *p = first;
-    if (first==NULL){
-        cout<<"Linked List Is Empty";
-    }else{
-        int count = 1;
-        while(p!=NULL)
-        {
-			if (p->carType==2){
-				cout<<endl;
-				cout<<"Car: "<<count<<endl;
-				cout<<"Driver "<<"Name: "<<p->driverName<<endl;
-				cout<<"Car "<<"Name: "<<p->carName<<endl;
-				cout<<"Registration "<<"Number: "<<p->regNumber<<endl;
-				cout<<"Car "<<"Type: "<<p->carType<<endl;
-				cout<<endl;
-				count++;
-				p = p->next;
-			}
-			else{
-				p = p->next;
-			}
+        Car *p = first;
+        if (first==NULL){
+       	    cout<<"Linked List Is Empty";
+        }else{
+		int count = 1;
+	while(p!=NULL)
+	{
+		if (p->carType==2){
+		cout<<endl;
+		cout<<"Car: "<<count<<endl;
+		cout<<"Driver "<<"Name: "<<p->driverName<<endl;
+		cout<<"Car "<<"Name: "<<p->carName<<endl;
+		cout<<"Registration "<<"Number: "<<p->regNumber<<endl;
+		cout<<"Car "<<"Type: "<<p->carType<<endl;
+		cout<<endl;
+		count++;
+		p = p->next;
+		}
+		else{
+		    p = p->next;
+		}
         }
     }
     mainMenu();
 }
 void addNewRide()
-{
-	//display_Detail_Registered_Cars();
-	
+{	
 	if(first != NULL){	
 		int count;
 		bool check;
@@ -165,7 +163,7 @@ void addNewRide()
 			check = false;
 			cout<<endl<<"Enter Car Number to Add a New Ride: ";
 			cin>>count;
-			
+
 			for(i = 1; i<count;i++){
 				p = p->next;
 				if(p==NULL){
@@ -175,31 +173,31 @@ void addNewRide()
 				}
 			}
 		}while(check);
-		
+
 		cout<<"\t\t <<<<<<<< YOUR CAR SELECTION IS >>>>>>> \n";
 		cout<<"Car Is: "<<p->carName<<endl;
 		cout<<"Driver Name: "<<p->driverName<<endl;
-		
+
 		Ride *current = new Ride;
-		
+
 		cout<<"Enter Rider Name: ";
 		cin>>current->riderName;
-		
+
 		cout<<"Enter Distance (km): ";
 		cin>>current->kms;
-		
+
 		cout<<"Enter Charges: ";
 		cin>>current->charges;
-		
+
 		if(p->rideNext != NULL){
 			current->nextRideDetail = p->rideNext;
 			p->rideNext = current;
 		}
-			p->rideNext = current;
-	}
-	else{
-		cout<<"\n\n <<<No Car Record Found>>>> \n\n";
-	}
+				p->rideNext = current;
+		}
+		else{
+			cout<<"\n\n <<<No Car Record Found>>>> \n\n";
+		}
     mainMenu();
 }
 void display_Ride_With_Details(){
