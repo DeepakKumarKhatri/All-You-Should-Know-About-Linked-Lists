@@ -26,8 +26,6 @@ void mainMenu(){
     cout<<"1 - Insert At End End \n";
     cout<<"2 - Display the Linked list \n";
     cout<<"3 - Swap The Values \n";
-
-
     cout<<"Enter Your Option: ";
     int option;
     cin>>option;
@@ -112,7 +110,6 @@ void swapValues(int elementFrom, int elementTo)
         {
             cout<<"\t\t<<<<<<<<<<<<<<< Element Not found >>>>>>>>>>>>>>>";
         }
-
     }
     else if (p->data == elementTo)
     {
