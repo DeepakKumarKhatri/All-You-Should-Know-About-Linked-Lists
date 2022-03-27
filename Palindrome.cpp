@@ -1,3 +1,6 @@
+//PROBLEM STATEMENT
+//CHECK THAT THE GIVEN LINKED-LIST IS PALINDROME OR NOT?
+
 #include<iostream>
 using namespace std;
 
@@ -23,13 +26,11 @@ void mainMenu(){
     cout<<"2 - Display the Linked list \n";
     cout<<"3 - Check If Palindrome \n";
 
-
     cout<<"Enter Your Option: ";
     int option;
     cin>>option;
 
     switch(option){
-
         case 1:
             insert_end();
             break;
@@ -61,7 +62,6 @@ void insert_end(){
 
 void displayTheLinkedList(){
     cout<<"This is the function of display_The_LinkedList \n";
-
     Node *p = first;
     if (first==NULL){
         cout<<"Linked List Is Empty";
@@ -77,7 +77,6 @@ void displayTheLinkedList(){
 
 bool checkIfPalindrome(){
     cout<<"This is the function of checkIfPalindrome \n";
-
     int count = 0;
 
     //for counting number of nodes in linked list
@@ -111,7 +110,6 @@ bool checkIfPalindrome(){
             p = p->next;
         }
     }
-
     for(int i=0;i<count;i++){
         if(arr[i]!=arrToCheck[i]){
             return false;
