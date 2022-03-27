@@ -17,7 +17,6 @@ void displayReduceAndReduce();
 void displayTheLinkedList();
 void mainMenu();
 
-
 int main(){
     mainMenu();
 }
@@ -26,8 +25,6 @@ void mainMenu(){
     cout<<"1 - Insert At End End \n";
     cout<<"2 - Display the Linked list \n";
     cout<<"3 - Display the Reduce And Reduce \n";
-
-
     cout<<"Enter Your Option: ";
     int option;
     cin>>option;
